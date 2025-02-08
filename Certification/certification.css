@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Centering the page*/
+#page-wrapper{
+    margin: auto;
+    width: 80vw;
+}
+/*Centering the page ends*/
+
+/*Container Starts*/
+
+.container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(182, 184, 200)
+}
+
+/*Header Starts*/
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 1vw;
+    background-color: rgb(156, 13, 13);
+    color: white;
+    & h1{
+        margin:0;
+    }
+    & p{
+        margin:0;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    }
+}
+/*Header ends*/
+
+/*Navigation Starts*/
+nav{
+    width: 30%;
+    background-color: rgb(204, 0, 0);
+}
+
+nav ul{
+    font-size: calc(2px + 2vw);
+    list-style: none;                       /*takes the normal <li> list style out*/
+    padding-left: 0;                       /*Make sure that there is no space inbetween the text-link and the frame*/
+    text-align: center;
+}
+
+nav li{
+    width: 90%;
+    margin: 4vh auto;
+    padding: 3vh 0;                 /*makes the area around the links bigger */
+    
+    /* border decoration */
+    border-style: groove;
+    border-color: black;
+    background-color: #89CFFF;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: black;
+    /* overflow-wrap: break-word; */
+}
+/*Navigation Ends*/
+
+/*Main Starts*/
+main{
+    width: 70%;
+    background-color: #89CFFF;
+}
+
+main h3{
+    margin: 0;
+    text-align:center;
+    font-size: calc(2px + 2vw);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+}
+
+main p{
+    margin: 0 1vw;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    font-size: calc(2px + 2vw);
+}
+/* Main Ends */
+
+/*Container ends*/
+
+/* Footer starts Here */
+footer{
+    background-color: rgb(156, 13, 13);
+    color: #C4A484;
+    padding: 1vh 1vw;
+    text-align: center;
+}
+
+footer a{
+    color: #C4A484;
+}
+/* Footer ends Here */
+
+/* The following code is for screen size 750px and smaller */
+@media screen and (max-width: 750px) {
+    /* header adjustment starts */
+    header{
+        text-align: center;
+    }
+    /* header adjustment ends */
+    
+    /* Container size adjustment starts*/
+    .container{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    /* Container size ajustment ends */
+
+    /* Ajusting the navigation starts here */
+    nav{
+        width: 100%;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        margin:0;
+    }
+
+    nav li{
+        font-size: calc(1.5px + 1.5vw);
+        padding: 1% 1%;
+        margin: 1% 1%;
+    }
+    /* Adjusting the navigation ends here */
+
+    /* Adjusting the main content starts here */
+    main{
+        width: 100%;
+        height: 100vh;
+    }
+    
+    main h3{
+        font-size: calc(2.5px + 2.5vw);
+    }
+
+    main p{
+        margin: 4% 2%;
+        font-size: calc(2.5px + 2.5vw);
+    }
+    /* Ajusting the main content ends here */
+}

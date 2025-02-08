@@ -1,0 +1,64 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Project | Resume</title>
+        <meta name="description" content="A website showcasing Jerry Teixeira Online Website">
+        <link rel="stylesheet" type="text/css" href="project.css">
+    </head>
+    <body>
+        <div id="page-wrapper">
+
+            <!--Header starts Here-->
+            <header>
+                <h1>Jerry Teixeira</h1>
+                <p><em>Welcome to my Online Resume!</em></p>
+            </header>
+            <!-- Header ends Here -->
+
+            <div class="container"> 
+                <!-- Navigation Starts Here -->
+                <nav>
+                    <ul>
+                        <li><a href="../Home/index.html" target="_blank"> Home </a></li>
+                        <li><a href="../Education/education.html" target="_blank"> Education </a></li>
+                        <li><a href="../Experience/experience.html" target="_blank"> Experience </a></li>
+                        <li><a href="../Extracurricular/extracurricular.html" target="_blank"> Extracurricular </a></li>
+                        <li><a href="../Certification/certification.html" target="_blank"> Certification </a></li>
+                        <li><a href="project.html" target="_blank"> Project </a></li>
+                    </ul>
+                </nav>
+                <!-- Navigation Ends Here -->
+
+                <!-- Main Content Starts Here -->
+                <main>
+                    <h3>Project</h3>
+                    <p>Welcome to my Online calculation!</p>
+                    <div id="calculator">
+                        <label for="first-number">First Number: </label><input id="first-number">
+                        <label for="second-number">Second Number: </label><input id="second-number">
+
+                        <button onclick="addition()">+</button>
+                        <button onclick="subtraction()">-</button>
+                        <button onclick="multiplication()">*</button>
+                        <button onclick="division()">/</button>
+                        <button onclick="power()">**</button>
+                        <button onclick="clearcalc()">Clear</button>
+                        
+                        <h3 id="output"></h3>
+                    </div>
+                    <script src="project.js"></script>
+                </main>
+                <!-- Main Content Ends Here -->
+            </div>
+            
+            <!-- Footer Starts Here -->
+            <footer>
+                <p>All rights reserved by Jerry Teixeira <a href="">Credits</a></p>
+            </footer>
+            <!-- Footer Ends Here -->
+        </div>
+    </body>
+</html>
+
+
